@@ -1,88 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Volatus Calculator 🚀</title>
-    <style>
-        body {
-            background-color: #111;
-            color: #00ffcc;
-            font-family: 'Courier New', Courier, monospace;
-            margin: 0;
-            padding: 2rem;
-        }
+  <meta charset="UTF-8" />
+  <title>Volatus Calculator | Mission Console</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      background: radial-gradient(ellipse at bottom, #0d1b2a 0%, #000000 100%);
+      color: #00ffd1;
+      font-family: 'Courier New', Courier, monospace;
+      background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+      background-size: 200px;
+    }
 
-        a {
-            color: #00ffff;
-            text-decoration: none;
-        }
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: #39ff14;
+      text-shadow: 0 0 5px #39ff14;
+    }
 
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            color: #39ff14;
-        }
+    h2 {
+      color: #ffcc00;
+      margin-top: 2rem;
+      border-bottom: 1px dashed #444;
+    }
 
-        h2 {
-            color: #ffcc00;
-            border-bottom: 1px dashed #555;
-            padding-bottom: 0.2rem;
-        }
+    section {
+      background-color: rgba(0, 0, 0, 0.4);
+      border-left: 4px solid #00ffcc;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+    }
 
-        section {
-            margin-bottom: 2rem;
-        }
+    code {
+      background-color: #222;
+      color: #ff66cc;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+    }
 
-        code {
-            background-color: #222;
-            color: #ff66cc;
-            padding: 0.2rem 0.4rem;
-            border-radius: 4px;
-        }
+    a {
+      color: #82cfff;
+      text-decoration: none;
+    }
 
-        .footer {
-            font-size: 0.9rem;
-            color: #888;
-            margin-top: 4rem;
-            text-align: center;
-        }
-    </style>
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 4rem;
+    }
+
+    .nasa-badge {
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+      width: 80px;
+      opacity: 0.9;
+    }
+  </style>
 </head>
 <body>
 
-    <h1>Volatus Calculator</h1>
-    <p><em>“High-speed airflow? Affirmative.”</em></p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" alt="NASA Logo" class="nasa-badge" />
 
-    <section>
-        <h2>🚧 Mission Briefing</h2>
-        <p>
-            <strong>Volatus</strong> is a custom-built domain-specific language for solving high-speed normal shock problems.
-            Built using <code>textX</code>, it interprets user-defined airflow conditions and computes missing parameters using ideal gas laws.
-        </p>
-    </section>
+  <h1>VOLATUS CALCULATOR</h1>
+  <p><em>“Initiate high-speed flow diagnostics — prepare for shockwave analysis.”</em></p>
 
-    <section>
-        <h2>🔧 Launch Sequence</h2>
-        <ol>
-            <li>Clone this repo: <a href="https://github.com/httpxcris/VolatusCalculator" target="_blank">VolatusCalculator</a></li>
-            <li>Install required modules: <code>pip install textX</code></li>
-            <li>Write your inputs in <code>.tx</code> format (see examples)</li>
-            <li>Run <code>main.py</code> to compute your airflow values</li>
-        </ol>
-    </section>
+  <section>
+    <h2>🛰️ Mission Overview</h2>
+    <p>
+      <strong>Volatus</strong> is a custom-built language to solve compressible flow problems across normal shocks using ideal gas principles. Think of it as your virtual flight engineer — calculating exit conditions with the precision of a space probe’s guidance computer.
+    </p>
+  </section>
 
-    <section>
-        <h2>📦 Payload Files</h2>
-        <ul>
-            <li><code>HighSpeed.tx</code> – Language grammar</li>
-            <li><code>main.py</code> – Interpreter logic</li>
-            <li><code>data.csv</code> – Optional CSV input values</li>
-        </ul>
-    </section>
+  <section>
+    <h2>🧰 Launch Protocol</h2>
+    <ol>
+      <li>Clone the GitHub repository: <a href="https://github.com/httpxcris/VolatusCalculator" target="_blank">VolatusCalculator</a></li>
+      <li>Install <code>textX</code>: <code>pip install textX</code></li>
+      <li>Write your input using the <code>.tx</code> grammar file</li>
+      <li>Execute <code>main.py</code> to compute airflow parameters</li>
+    </ol>
+  </section>
 
-    <div class="footer">
-        &copy; 2025 Volatus Project | Crafted with thrust by <a href="https://github.com/httpxcris" target="_blank">@httpxcris</a> 🚀
-    </div>
+  <section>
+    <h2>📦 Mission Files</h2>
+    <ul>
+      <li><code>HighSpeed.tx</code> — Grammar definition file for Volatus language</li>
+      <li><code>main.py</code> — The interpreter that reads, calculates, and prints</li>
+      <li><code>data.csv</code> — Optional input file for bulk property computation</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🧪 Example Input</h2>
+    <pre>
+AirFlow:
+  InitialPressure = 101325
+  InitialTemperature = 288.15
+  (Density will be calculated)
+    </pre>
+  </section>
+
+  <div class="footer">
+    ⓒ 2025 Volatus Project | Operated from Earth Orbit by <a href="https://github.com/httpxcris" target="_blank">@httpxcris</a> 🌍🚀
+  </div>
 
 </body>
 </html>
