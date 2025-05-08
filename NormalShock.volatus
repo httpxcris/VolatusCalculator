@@ -1,0 +1,5 @@
+initial shock_example {
+    InitialPressure: 30000
+    InitialTemperature: 450
+    MachNumber: 0.8
+}

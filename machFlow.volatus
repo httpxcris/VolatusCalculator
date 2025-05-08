@@ -1,0 +1,4 @@
+initial supersonic_case {
+    InitialPressure: 101325
+    MachNumber: 2.0
+}

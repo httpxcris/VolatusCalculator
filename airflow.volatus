@@ -1,0 +1,5 @@
+initial flow1 {
+    InitialTemperature: 500.0
+    InitialPressure: 1013000.0
+    MachNumber: 2.0
+}

@@ -1,0 +1,19 @@
+Model:
+    inputs+=Input+
+;
+
+Input:
+    'initial' name=ID '{' properties+=Property* '}'
+;
+
+Property:
+    name=PropertyName ':' value=FLOAT
+;
+
+PropertyName:
+    'InitialPressure' | 'InitialTemperature' | 'InitialDensity' | 'MachNumber'
+;
+
+Comment:
+  /\/\/.*$/
+;

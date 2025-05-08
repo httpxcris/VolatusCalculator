@@ -1,0 +1,34 @@
+
+    digraph textX {
+    fontname = "Bitstream Vera Sans"
+    fontsize = 8
+    node[
+        shape=record,
+        style=filled,
+        fillcolor=aliceblue
+    ]
+    nodesep = 0.3
+    edge[dir=black,arrowtail=empty]
+
+
+1941403780496[ label="{Model|}"]
+
+1941403535952[ label="{Input|name: ID\l}"]
+
+1941403540112[ label="{Property|name: PropertyName\lvalue: FLOAT\l}"]
+
+
+
+1941403780496 -> 1941403535952[arrowtail=diamond, dir=both, headlabel="inputs 1..*"]
+1941403535952 -> 1941403540112[arrowtail=diamond, dir=both, headlabel="properties 1..*"]
+match_rules [ shape=plaintext, label=< <table>
+	<tr>
+		<td><b>Comment</b></td><td>\/\/.*$</td>
+	</tr>
+	<tr>
+		<td><b>PropertyName</b></td><td>InitialPressure|InitialTemperature|InitialDensity|MachNumber</td>
+	</tr>
+</table> >]
+
+
+}
